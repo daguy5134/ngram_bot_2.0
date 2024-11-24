@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c89efc7-bc63-4f06-bef6-8de7d7ece1aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ngram_bot_2.0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/books/new/20_thousand_leagues.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/ngrams/quadrigrams.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/ngrams/trigrams.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trainer.py" afterDir="false" />
+    <list default="true" id="1c89efc7-bc63-4f06-bef6-8de7d7ece1aa" name="Changes" comment="started developing trainer.py, needs to treat data and format it in dict.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +55,19 @@
       <option name="presentableId" value="Default" />
       <updated>1732409338175</updated>
     </task>
+    <task id="LOCAL-00001" summary="started developing trainer.py, needs to treat data and format it in dict.">
+      <option name="closed" value="true" />
+      <created>1732452977713</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732452977713</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="started developing trainer.py, needs to treat data and format it in dict." />
+    <option name="LAST_COMMIT_MESSAGE" value="started developing trainer.py, needs to treat data and format it in dict." />
   </component>
 </project>

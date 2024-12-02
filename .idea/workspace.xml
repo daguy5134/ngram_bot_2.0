@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c89efc7-bc63-4f06-bef6-8de7d7ece1aa" name="Changes" comment="add treatment of words, corrected grammar, corrected paths of json files, corrected tabulations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ngrams/quadrigrams.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/ngrams/quadrigrams.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ngrams/trigrams.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/ngrams/trigrams.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,16 +52,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.sandbox.executor&quot;: &quot;Run&quot;,
-    &quot;Python.trainer.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.sandbox.executor": "Run",
+    "Python.trainer.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\PycharmProjects\ngram_bot_2.0\data\books\new" />
@@ -154,5 +152,16 @@
     <MESSAGE value="started developing trainer.py, needs to treat data and format it in dict." />
     <MESSAGE value="add treatment of words, corrected grammar, corrected paths of json files, corrected tabulations" />
     <option name="LAST_COMMIT_MESSAGE" value="add treatment of words, corrected grammar, corrected paths of json files, corrected tabulations" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trainer.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

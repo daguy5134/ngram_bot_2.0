@@ -21,7 +21,8 @@ def final_dict():
 
 def file_empty(file_path):
 	with open(file_path, "rb") as my_file:
-		return my_file.read(1) == ''
+		r = my_file.read()
+		return r == b''
 
 
 ngram_dict_four = four_gram_nested()

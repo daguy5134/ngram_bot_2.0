@@ -1,15 +1,33 @@
 import user_input
 import os
 import shutil
-import json
+import pickle
 from nltk import ngrams
 from nltk.tokenize import word_tokenize
 from collections import Counter, defaultdict
 
+
+def four_gram_nested():
+	return defaultdict(trigram_nested)
+
+
+def trigram_nested():
+	return defaultdict(final_dict)
+
+
+def final_dict():
+	return defaultdict(Counter)
+
+
+def file_empty(file_path):
+	with open(file_path, "rb") as my_file:
+		return my_file.read(1) == ''
+
+
+ngram_dict_four = four_gram_nested()
+trigram_dict = trigram_nested()
 source_dir = 'data/books/new'
 destination_dir = 'data/books/archived'
-ngram_dict_four = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: Counter())))
-trigram_dict = defaultdict(lambda: defaultdict(lambda: Counter()))
 punctuation = """
 "#$%&'()*+,-/:;<=>@[]^_{|}~`'
 """
@@ -24,6 +42,15 @@ if books:
 	)
 	if start == "dev_mode":
 		print("Activating developer mode")
+	elif start == "y":
+		if file_empty("data/ngrams/trigrams.pkl"):
+			ngram_dict_four = four_gram_nested()
+			trigram_dict = trigram_nested()
+		else:
+			with open("data/ngrams/trigrams.pkl", "rb") as three_data:
+				trigram_dict = pickle.load(three_data)
+			with open("data/ngrams/quadrigrams.pkl", "rb") as four_data:
+				ngram_dict_four = pickle.load(three_data)
 	if start in ["y", "dev_mode"]:
 		print("The process has begun")
 		for file in books:
@@ -42,11 +69,11 @@ if books:
 				for item in four_grams:
 					ngram_dict_four[item[0]][item[1]][item[2]][item[3]] += 1
 		
-		if start == "y":
-			with open('data/ngrams/quadrigrams.json', 'w') as four_gram_file:
-				json.dump(ngram_dict_four, four_gram_file)
-			with open('data/ngrams/trigrams.json', 'w') as trigrams_file:
-				json.dump(trigram_dict, trigrams_file)
+		if start in ["y"]:
+			with open('data/ngrams/quadrigrams.pkl', 'wb') as four_gram_file:
+				pickle.dump(ngram_dict_four, four_gram_file)
+			with open('data/ngrams/trigrams.pkl', 'wb') as trigrams_file:
+				pickle.dump(trigram_dict, trigrams_file)
 			for filename in books:
 				source_file = os.path.join(source_dir, filename)
 				destination_file = os.path.join(destination_dir, filename)

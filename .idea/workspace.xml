@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c89efc7-bc63-4f06-bef6-8de7d7ece1aa" name="Changes" comment="started developing trainer.py, needs to treat data and format it in dict.">
+    <list default="true" id="1c89efc7-bc63-4f06-bef6-8de7d7ece1aa" name="Changes" comment="add treatment of words, corrected grammar, corrected paths of json files, corrected tabulations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ngrams/quadrigrams.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/ngrams/quadrigrams.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ngrams/trigrams.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/ngrams/trigrams.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,12 +24,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master2" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -38,15 +54,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.trainer.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.sandbox.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trainer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quent\PycharmProjects\ngram_bot_2.0\data\books\new" />
@@ -84,10 +101,33 @@
       <option name="project" value="LOCAL" />
       <updated>1732453410978</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add treatment of words, corrected grammar, corrected paths of json files, corrected tabulations">
+      <option name="closed" value="true" />
+      <created>1732661356678</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732661356678</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master2" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -98,7 +138,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master2" />
                       </list>
                     </value>
                   </entry>
@@ -112,6 +152,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="started developing trainer.py, needs to treat data and format it in dict." />
-    <option name="LAST_COMMIT_MESSAGE" value="started developing trainer.py, needs to treat data and format it in dict." />
+    <MESSAGE value="add treatment of words, corrected grammar, corrected paths of json files, corrected tabulations" />
+    <option name="LAST_COMMIT_MESSAGE" value="add treatment of words, corrected grammar, corrected paths of json files, corrected tabulations" />
   </component>
 </project>

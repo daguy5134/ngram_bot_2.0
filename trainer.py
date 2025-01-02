@@ -31,7 +31,7 @@ source_dir = 'data/books/new'
 destination_dir = 'data/books/archived'
 punctuation = """
 "#$%&'()*+,-/:;<=>@[]^_{|}~`'
-"""
+"""#dont delete this
 
 books = os.listdir(source_dir)
 if books:
